@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 gasolina_pd = pd.read_csv("/content/da-expratmod18-ebac/gasolina.csv")
-gasolina_pd
+print(gasolina_pd)
 
 maior_vl = gasolina_pd.loc[gasolina_pd['venda'].idxmax()]
 menor_vl = gasolina_pd.loc[gasolina_pd['venda'].idxmin()]
