@@ -9,7 +9,7 @@ maior_vl = gasolina_pd.loc[gasolina_pd['venda'].idxmax()]
 menor_vl = gasolina_pd.loc[gasolina_pd['venda'].idxmin()]
 
 with sns.axes_style('whitegrid'):
-  grafico = sns.lineplot(data=gasolina_pd, x="dia", y="venda", 
+  grafico = sns.lineplot(data=gasolina_pd, x="dia", y="venda",
                          color="orange", linewidth=2.5, marker='o')
   plt.scatter(maior_vl["dia"], maior_vl["venda"], color="green", s=50, zorder=5, label="Valor máximo")
   plt.scatter(menor_vl["dia"], menor_vl["venda"], color="red", s=50, zorder=5, label="Valor mínimo")
